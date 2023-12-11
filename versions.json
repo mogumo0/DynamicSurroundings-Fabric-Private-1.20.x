@@ -1,0 +1,11 @@
+{
+  "downloadLocation": "https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings-fabric-edition/files",
+  "releases": {
+    "1.20": {
+      "0.0.1": "First Alpha",
+    }
+  },
+  "recommend": {
+    "1.20": "0.0.4"
+  }
+}
