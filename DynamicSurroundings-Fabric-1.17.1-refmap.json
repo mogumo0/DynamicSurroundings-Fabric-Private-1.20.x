@@ -1,0 +1,160 @@
+{
+  "mappings": {
+    "org/orecruncher/dsurround/mixins/audio/MixinSoundEngineAccessor": {
+      "devicePointer": "field_18898:J",
+      "contextPointer": "field_18899:J"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinParticleManager": {
+      "spriteAwareFactories": "field_18300:Ljava/util/Map;",
+      "createParticle": "method_3055(Lnet/minecraft/class_2394;DDDDDD)Lnet/minecraft/class_703;"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinWorld": {
+      "onBlockChanged(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/block/BlockState;)V": "Lnet/minecraft/class_1937;method_19282(Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)V"
+    },
+    "org/orecruncher/dsurround/mixins/audio/MixinStaticSoundAccessor": {
+      "format": "field_18917:Ljavax/sound/sampled/AudioFormat;",
+      "sample": "field_18916:Ljava/nio/ByteBuffer;"
+    },
+    "org/orecruncher/dsurround/mixins/audio/MixinSource": {
+      "play()V": "Lnet/minecraft/class_4224;method_19650()V",
+      "tick()V": "Lnet/minecraft/class_4224;method_19658()V",
+      "stop()V": "Lnet/minecraft/class_4224;method_19655()V",
+      "setBuffer(Lnet/minecraft/client/sound/StaticSound;)V": "Lnet/minecraft/class_4224;method_19642(Lnet/minecraft/class_4231;)V"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinIngameHud": {
+      "\u003cinit\u003e(Lnet/minecraft/client/MinecraftClient;)V": "Lnet/minecraft/class_329;\u003cinit\u003e(Lnet/minecraft/class_310;)V",
+      "Lnet/minecraft/client/gui/hud/InGameHud;renderStatusEffectOverlay(Lnet/minecraft/client/util/math/MatrixStack;)V": "Lnet/minecraft/class_329;method_1765(Lnet/minecraft/class_4587;)V",
+      "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_4587;F)V"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinAbstractSoundInstance": {
+      "volume": "field_5442:F",
+      "pitch": "field_5441:F"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinSoundManagerAccessor": {
+      "soundSystem": "field_5590:Lnet/minecraft/class_1140;"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinEntityArrow": {
+      "Lnet/minecraft/entity/projectile/PersistentProjectileEntity;isCritical()Z": "Lnet/minecraft/class_1665;method_7443()Z",
+      "tick()V": "Lnet/minecraft/class_1665;method_5773()V"
+    },
+    "org/orecruncher/dsurround/mixins/audio/MixinSoundSystem": {
+      "play(Lnet/minecraft/client/sound/SoundInstance;)V": "Lnet/minecraft/class_1140;method_4854(Lnet/minecraft/class_1113;)V",
+      "start()V": "Lnet/minecraft/class_1140;method_4846()V",
+      "Lnet/minecraft/client/sound/SoundLoader;close()V": "Lnet/minecraft/class_4237;method_19738()V",
+      "Lnet/minecraft/client/sound/SoundEngine;init()V": "Lnet/minecraft/class_4225;method_19661()V",
+      "stop()V": "Lnet/minecraft/class_1140;method_4856()V",
+      "Lnet/minecraft/client/sound/Channel$SourceManager;run(Ljava/util/function/Consumer;)V": "Lnet/minecraft/class_4235$class_4236;method_19735(Ljava/util/function/Consumer;)V"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinSoundSystemAccessors": {
+      "sources": "field_18950:Ljava/util/Map;",
+      "listener": "field_18946:Lnet/minecraft/class_4227;"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinSoundEngine": {
+      "init()V": "Lnet/minecraft/class_4225;method_19661()V"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinRaycastContextAccessor": {
+      "start": "field_17553:Lnet/minecraft/class_243;",
+      "end": "field_17554:Lnet/minecraft/class_243;",
+      "entityPosition": "field_17557:Lnet/minecraft/class_3726;"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinTagManager": {
+      "tagGroups": "field_28306:Ljava/util/Map;"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinClientWorldProperties": {
+      "flatWorld": "field_24607:Z"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinSoundSystem": {
+      "getAdjustedVolume(Lnet/minecraft/client/sound/SoundInstance;)F": "Lnet/minecraft/class_1140;method_4853(Lnet/minecraft/class_1113;)F",
+      "Lnet/minecraft/util/math/Vec3d;\u003cinit\u003e(DDD)V": "Lnet/minecraft/class_243;\u003cinit\u003e(DDD)V",
+      "play(Lnet/minecraft/client/sound/SoundInstance;)V": "Lnet/minecraft/class_1140;method_4854(Lnet/minecraft/class_1113;)V"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinBiome": {
+      "getFogColor()I": "Lnet/minecraft/class_1959;method_24376()I"
+    },
+    "org/orecruncher/dsurround/mixins/core/MixinParticle": {
+      "velocityX": "field_3852:D",
+      "velocityZ": "field_3850:D",
+      "velocityY": "field_3869:D"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "org/orecruncher/dsurround/mixins/audio/MixinSoundEngineAccessor": {
+        "devicePointer": "field_18898:J",
+        "contextPointer": "field_18899:J"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinParticleManager": {
+        "spriteAwareFactories": "field_18300:Ljava/util/Map;",
+        "createParticle": "method_3055(Lnet/minecraft/class_2394;DDDDDD)Lnet/minecraft/class_703;"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinWorld": {
+        "onBlockChanged(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/BlockState;Lnet/minecraft/block/BlockState;)V": "Lnet/minecraft/class_1937;method_19282(Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)V"
+      },
+      "org/orecruncher/dsurround/mixins/audio/MixinStaticSoundAccessor": {
+        "format": "field_18917:Ljavax/sound/sampled/AudioFormat;",
+        "sample": "field_18916:Ljava/nio/ByteBuffer;"
+      },
+      "org/orecruncher/dsurround/mixins/audio/MixinSource": {
+        "play()V": "Lnet/minecraft/class_4224;method_19650()V",
+        "tick()V": "Lnet/minecraft/class_4224;method_19658()V",
+        "stop()V": "Lnet/minecraft/class_4224;method_19655()V",
+        "setBuffer(Lnet/minecraft/client/sound/StaticSound;)V": "Lnet/minecraft/class_4224;method_19642(Lnet/minecraft/class_4231;)V"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinIngameHud": {
+        "\u003cinit\u003e(Lnet/minecraft/client/MinecraftClient;)V": "Lnet/minecraft/class_329;\u003cinit\u003e(Lnet/minecraft/class_310;)V",
+        "Lnet/minecraft/client/gui/hud/InGameHud;renderStatusEffectOverlay(Lnet/minecraft/client/util/math/MatrixStack;)V": "Lnet/minecraft/class_329;method_1765(Lnet/minecraft/class_4587;)V",
+        "render": "Lnet/minecraft/class_329;method_1753(Lnet/minecraft/class_4587;F)V"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinAbstractSoundInstance": {
+        "volume": "field_5442:F",
+        "pitch": "field_5441:F"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinSoundManagerAccessor": {
+        "soundSystem": "field_5590:Lnet/minecraft/class_1140;"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinEntityArrow": {
+        "Lnet/minecraft/entity/projectile/PersistentProjectileEntity;isCritical()Z": "Lnet/minecraft/class_1665;method_7443()Z",
+        "tick()V": "Lnet/minecraft/class_1665;method_5773()V"
+      },
+      "org/orecruncher/dsurround/mixins/audio/MixinSoundSystem": {
+        "play(Lnet/minecraft/client/sound/SoundInstance;)V": "Lnet/minecraft/class_1140;method_4854(Lnet/minecraft/class_1113;)V",
+        "start()V": "Lnet/minecraft/class_1140;method_4846()V",
+        "Lnet/minecraft/client/sound/SoundLoader;close()V": "Lnet/minecraft/class_4237;method_19738()V",
+        "Lnet/minecraft/client/sound/SoundEngine;init()V": "Lnet/minecraft/class_4225;method_19661()V",
+        "stop()V": "Lnet/minecraft/class_1140;method_4856()V",
+        "Lnet/minecraft/client/sound/Channel$SourceManager;run(Ljava/util/function/Consumer;)V": "Lnet/minecraft/class_4235$class_4236;method_19735(Ljava/util/function/Consumer;)V"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinSoundSystemAccessors": {
+        "sources": "field_18950:Ljava/util/Map;",
+        "listener": "field_18946:Lnet/minecraft/class_4227;"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinSoundEngine": {
+        "init()V": "Lnet/minecraft/class_4225;method_19661()V"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinRaycastContextAccessor": {
+        "start": "field_17553:Lnet/minecraft/class_243;",
+        "end": "field_17554:Lnet/minecraft/class_243;",
+        "entityPosition": "field_17557:Lnet/minecraft/class_3726;"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinTagManager": {
+        "tagGroups": "field_28306:Ljava/util/Map;"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinClientWorldProperties": {
+        "flatWorld": "field_24607:Z"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinSoundSystem": {
+        "getAdjustedVolume(Lnet/minecraft/client/sound/SoundInstance;)F": "Lnet/minecraft/class_1140;method_4853(Lnet/minecraft/class_1113;)F",
+        "Lnet/minecraft/util/math/Vec3d;\u003cinit\u003e(DDD)V": "Lnet/minecraft/class_243;\u003cinit\u003e(DDD)V",
+        "play(Lnet/minecraft/client/sound/SoundInstance;)V": "Lnet/minecraft/class_1140;method_4854(Lnet/minecraft/class_1113;)V"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinBiome": {
+        "getFogColor()I": "Lnet/minecraft/class_1959;method_24376()I"
+      },
+      "org/orecruncher/dsurround/mixins/core/MixinParticle": {
+        "velocityX": "field_3852:D",
+        "velocityZ": "field_3850:D",
+        "velocityY": "field_3869:D"
+      }
+    }
+  }
+}

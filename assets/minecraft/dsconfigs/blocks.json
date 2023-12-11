@@ -1,0 +1,227 @@
+[
+  {
+    "blocks": [
+      "minecraft:nether_wart[age=3]"
+    ],
+    "effects": [
+      {
+        "effect": "fire_jet",
+        "spawnChance": "0.005"
+      }
+    ]
+  },
+  {
+    "blocks": [
+      "minecraft:lava"
+    ],
+    "effects": [
+      {
+        "effect": "fire_jet",
+        "spawnChance": "0.0005"
+      }
+    ]
+  },  {
+    "blocks": [
+      "minecraft:water"
+    ],
+    "effects": [
+      {
+        "effect": "bubble_column",
+        "spawnChance": "0.0005"
+      },
+      {
+        "effect": "steam_column",
+        "alwaysOn": true
+      },
+      {
+        "effect": "waterfall",
+        "alwaysOn": true
+      }
+    ]
+  },
+  {
+    "blocks": [
+      "minecraft:water_cauldron[level=3]"
+    ],
+    "effects": [
+      {
+        "effect": "steam_column",
+        "alwaysOn": true
+      }
+    ]
+  },
+  {
+    "blocks": [
+      "#minecraft:ice"
+    ],
+    "soundChance": "0.0001",
+    "acoustics": [
+      {
+        "soundEventId": "dsurround:ice"
+      }
+    ]
+  },
+  {
+    "blocks": [
+      "minecraft:lily_pad"
+    ],
+    "soundChance": "0.04",
+    "acoustics": [
+      {
+        "soundEventId": "dsurround:lilypad.frog",
+        "conditions": "!state.isInside() && !weather.canWaterFreeze()",
+        "weight": 30,
+        "minVolume": 0.6,
+        "maxVolume": 1.0,
+        "minPitch": 0.8,
+        "maxPitch": 1.2
+      },
+      {
+        "soundEventId": "dsurround:lilypad.bullfrog",
+        "conditions": "!state.isInside() && !weather.canWaterFreeze()",
+        "weight": 10
+      }
+    ]
+  },
+  {
+    "blocks": [
+      "minecraft:soul_sand"
+    ],
+    "soundChance": "0.000125",
+    "acoustics": [
+      {
+        "soundEventId": "dsurround:soulsand.laughter",
+        "conditions": "dim.getId() == 'minecraft:the_nether'",
+        "minPitch": 0.6,
+        "maxPitch": 1.2
+      }
+    ]
+  },
+  {
+    "blocks": [
+      "minecraft:nether_bricks",
+      "minecraft:nether_brick_fence",
+      "minecraft:nether_brick_stairs"
+    ],
+    "soundChance": "0.000125",
+    "acoustics": [
+      {
+        "soundEventId": "netherbrick.breathing",
+        "conditions": "dim.getId() == 'minecraft:the_nether'",
+        "minPitch": 0.6,
+        "maxPitch": 1.2
+      }
+    ]
+  },
+  {
+    "blocks": [
+      "@ORGANIC_PRODUCT",
+      "@SOLID_ORGANIC",
+      "@PLANT",
+      "#minecraft:fences",
+      "#minecraft:gates"
+    ],
+    "soundOcclusion": 0.2
+  },
+  {
+    "blocks": [
+      "#minecraft:beehives"
+    ],
+    "soundOcclusion": 0.3
+  },
+  {
+    "blocks": [
+      "#minecraft:wool"
+    ],
+    "soundOcclusion": 1
+  },
+  {
+    "blocks": [
+      "minecraft:chest"
+    ],
+    "soundOcclusion": 0.4
+  },
+  {
+    "blocks": [
+      "minecraft:barrier"
+    ],
+    "soundOcclusion": 0
+  },
+  {
+    "blocks": [
+      "@PORTAL",
+      "@STONE",
+      "@METAL",
+      "@REPAIR_STATION",
+      "@EGG",
+      "@PISTON"
+    ],
+    "soundReflectivity": 0.95
+  },
+  {
+    "blocks": [
+      "@CARPET",
+      "@WOOL"
+    ],
+    "soundReflectivity": 0.25
+  },
+  {
+    "blocks": [
+      "@PLANT",
+      "@UNDERWATER_PLANT",
+      "@SNOW_LAYER",
+      "@SNOW_BLOCK",
+      "@ORGANIC_PRODUCT",
+      "@AGGREGATE",
+      "@SPONGE",
+      "@BAMBOO",
+      "@BAMBOO_SAPLING",
+      "@LEAVES",
+      "@CACTUS",
+      "#minecraft:fences",
+      "#minecraft:fence_gates"
+    ],
+    "soundReflectivity": 0.2
+  },
+  {
+    "blocks": [
+      "@SOIL",
+      "#minecraft:beehives"
+    ],
+    "soundReflectivity": 0.3
+  },
+  {
+    "blocks": [
+      "@WATER",
+      "@BUBBLE_COLUMN",
+      "@DENSE_ICE",
+      "@ICE",
+      "#minecraft:impermeable"
+    ],
+    "soundReflectivity": 0.5
+  },
+  {
+    "blocks": [
+      "@LAVA",
+      "@FIRE",
+      "@COBWEB",
+      "@DECORATION",
+      "@REDSTONE_LAMP",
+      "@SHULKER_BOX",
+      "@TNT",
+      "@CAKE"
+    ],
+    "soundReflectivity": 0
+  },
+  {
+    "blocks": [
+      "@WOOD",
+      "@NETHER_WOOD",
+      "#minecraft:logs",
+      "#minecraft:planks",
+      "#minecraft:wooden_slabs",
+      "#minecraft:wooden_stairs"
+    ],
+    "soundReflectivity": 0.7
+  }
+]
